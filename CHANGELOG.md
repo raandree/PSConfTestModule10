@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release working.
 - Added missing entries to `build.yaml`.
 - Removed from dependency.
+- Fixed typo.
