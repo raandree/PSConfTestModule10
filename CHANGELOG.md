@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed from dependency.
 - Fixed typo.
 - Added dependency `xDscResourceDesigner`.
+- Added more publish tasks + version bump.
