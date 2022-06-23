@@ -17,5 +17,6 @@
     'Sampler.GitHubTasks'       = 'latest'
     'DscResource.Test'          = 'latest'
     'DscResource.AnalyzerRules' = 'latest'
+    'xDscResourceDesigner'      = 'latest'
 
 }
