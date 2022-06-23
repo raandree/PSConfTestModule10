@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added dependency `xDscResourceDesigner`.
 - Added more publish tasks + version bump.
 - Removed non-existing task.
+- Changes message.
