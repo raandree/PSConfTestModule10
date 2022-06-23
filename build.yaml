@@ -57,6 +57,7 @@ BuildWorkflow:
   # Defining test task to be run when invoking `./build.ps1 -Tasks test`
   test:
     - Pester_Tests_Stop_On_Fail
+    - DscResource_Tests_Stop_On_Fail
     # Use this task if pipeline uses code coverage and the module is using the
     # pattern of Public, Private, Enum, Classes.
     #- Convert_Pester_Coverage
@@ -93,6 +94,7 @@ Pester:
   # - tests/Unit
   # - tests/Integration
   ExcludeTag:
+
   #  - helpQuality
   #  - FunctionalQuality
   #  - TestQuality
@@ -113,7 +115,8 @@ Pester:
 
 DscTest:
   ExcludeTag:
-    - "Common Tests - New Error-Level Script Analyzer Rules"
+    - Common Tests - New Error-Level Script Analyzer Rules
+    - Common Tests - Validate Localization
   Tag:
   ExcludeSourceFile:
     - output
