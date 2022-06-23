@@ -16,7 +16,6 @@
     Sampler                     = 'latest'
     'Sampler.GitHubTasks'       = 'latest'
     'DscResource.Test'          = 'latest'
-    'DscResource.Template'      = 'latest'
     'DscResource.AnalyzerRules' = 'latest'
 
 }
