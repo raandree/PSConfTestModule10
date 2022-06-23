@@ -123,6 +123,7 @@ DscTest:
   ExcludeModuleFile:
     - Modules/DscResource.Common
   #  - Templates
+  MainGitBranch: main``
 
 # Import ModuleBuilder tasks from a specific PowerShell module using the build
 # task's alias. Wildcard * can be used to specify all tasks that has a similar
@@ -131,8 +132,12 @@ DscTest:
 ModuleBuildTasks:
   Sampler:
     - '*.build.Sampler.ib.tasks'
-
-
+  Sampler.GitHubTasks:
+    - '*.ib.tasks'
+  #DscResource.DocGenerator:
+  #  - 'Task.*'
+  DscResource.Test:
+    - 'Task.*'
 
 # Invoke-Build Header to be used to 'decorate' the terminal output of the tasks.
 TaskHeader: |
@@ -145,3 +150,18 @@ TaskHeader: |
   Write-Build DarkGray "  $Path"
   Write-Build DarkGray "  $($Task.InvocationInfo.ScriptName):$($Task.InvocationInfo.ScriptLineNumber)"
   ""
+
+####################################################
+#             Changelog Configuration              #
+####################################################
+ChangelogConfig:
+  FilesToAdd:
+    - 'CHANGELOG.md'
+  UpdateChangelogOnPrerelease: false
+
+####################################################
+#                Git Configuration                 #
+####################################################
+GitConfig:
+  UserName: bot
+  UserEmail: bot@contoso.com
